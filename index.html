@@ -31,15 +31,39 @@
           <div class="card-body">
             <h5 id="questiontext">Frage</h5>
             <ul class="list-group list-group-flush">
-              <li id="answer_1" class="list-group-item">Antwort</li>
-              <li id="answer_2" class="list-group-item">Antwort</li>
-              <li id="answer_3" class="list-group-item">Antwort</li>
-              <li id="answer_4" class="list-group-item">Antwort</li>
+              <li
+                onclick="answer('answer_1')"
+                id="answer_1"
+                class="list-group-item"
+              >
+                Antwort
+              </li>
+              <li
+                onclick="answer('answer_2')"
+                id="answer_2"
+                class="list-group-item"
+              >
+                Antwort
+              </li>
+              <li
+                onclick="answer('answer_3')"
+                id="answer_3"
+                class="list-group-item"
+              >
+                Antwort
+              </li>
+              <li
+                onclick="answer('answer_4')"
+                id="answer_4"
+                class="list-group-item"
+              >
+                Antwort
+              </li>
             </ul>
           </div>
           <div class="question-footer">
-            <span><b>1</b> von <b id="all-questions">5</b> Fragen</span>
-            <button class="btn" role="button">Next Page</button>
+            <span><b id="nmbr-change">1</b> von <b id="all-questions">5</b> Fragen</span>
+            <button onclick="nextQuestion()" id="next-btn" class="btn" role="button" disabled>Next Page</button>
           </div>
         </div>
       </div>

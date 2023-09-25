@@ -41,6 +41,12 @@ body {
   margin: 2px;
 }
 
+.list-group-item:hover{
+  cursor: pointer !important;
+  background-color: rgba(0, 0, 0, 0.2);
+  
+}
+
 .question-footer{
   display: flex;
   justify-content: space-between;
